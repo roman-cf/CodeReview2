@@ -1,3 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Tahoma; }
 
+a:link, a:hover, a:visited {
+  color: white;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+header {
+  background-color: #FDF3F3; }
+
+nav {
+  background-color: #8E1918;
+  font-size: 22px;
+  padding: 5px 0px; }
+
+nav ul {
+  margin: 0; }
+
+nav li, #footernav li {
+  display: inline; }
+
+main {
+  background-color: #CECECE;
+  background-image: url("../img/traffic-332857_1920.jpg");
+  background-repeat: no-repeat; }
+
+h1 {
+  color: white;
+  font-weight: 300; }
+
+footer {
+  background-color: black;
+  color: white; }
 
 /*# sourceMappingURL=style.css.map */
