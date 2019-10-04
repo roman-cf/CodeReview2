@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Tahoma; }
+  font-family: "PT Sans Narrow", verdana, sans-serif; }
 
 a:link, a:hover, a:visited {
   color: white;
@@ -11,30 +11,182 @@ a:hover {
   text-decoration: underline; }
 
 header {
-  background-color: #FDF3F3; }
+  background-color: #FDF3F3;
+  display: flex;
+  justify-content: space-between; }
+
+.logo {
+  display: flex;
+  margin: 2%;
+  font-family: Verdana, sans-serif;
+  font-weight: 800;
+  font-size: 22px; }
+
+.logoCF {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background-color: #bf2524;
+  color: white;
+  border-radius: 50%; }
+
+.ad {
+  margin: 2%; }
 
 nav {
   background-color: #8E1918;
   font-size: 22px;
+  font-weight: 400;
   padding: 5px 0px; }
 
 nav ul {
   margin: 0; }
 
 nav li, #footernav li {
-  display: inline; }
+  display: inline;
+  padding-right: 1em; }
 
 main {
+  font-family: "PT Sans Narrow", verdana, sans-serif;
   background-color: #CECECE;
   background-image: url("../img/traffic-332857_1920.jpg");
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 1000px 500px; }
 
-h1 {
+h1, h2 {
+  margin: 0;
+  padding-top: 4%;
+  font-weight: 300;
+  font-size: 2em; }
+
+h3 {
+  margin: 0;
+  color: #51638E; }
+
+main > h1 {
   color: white;
-  font-weight: 300; }
+  padding-left: 1em; }
+
+.shield h1 {
+  width: 40%; }
+
+.shield h2 {
+  width: 40%; }
+
+.shield {
+  margin: 2% auto 0;
+  width: 50vw;
+  height: 450px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border: darkgrey solid 2px;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%; }
+
+.textbox {
+  margin: 3% 10%;
+  width: 120px;
+  padding: 4px; }
+
+.btnCalc {
+  width: 22%;
+  height: 1.5em;
+  font-size: 22px;
+  background-color: #449236;
+  color: white;
+  border-radius: 4px;
+  border-style: none; }
+
+#result {
+  visibility: hidden;
+  padding-top: 10vh;
+  font-size: 32px;
+  color: #449236; }
+
+.textfield {
+  text-align: center;
+  padding: 0 25vw; }
+
+.textfield padding-top {
+  margin-bottom: 1.5em; }
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+section ul {
+  padding: 0;
+  list-style: none; }
+
+section li {
+  margin-top: 0.7em;
+  list-style-type: none;
+  padding-left: 25px;
+  margin-left: 0px;
+  background-image: url("../img/check.jpg");
+  background-repeat: no-repeat;
+  background-position: left center; }
+
+.box {
+  margin: 6% 4%;
+  padding: 2%;
+  width: 38%;
+  background-color: white;
+  border-top: solid 2px black;
+  border-radius: 2px;
+  box-shadow: 0px 0px 3px gray; }
 
 footer {
   background-color: black;
-  color: white; }
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: start; }
+
+@media screen and (resolution: 292dpi), (orientation: portrait) {
+  .logo {
+    font-size: 5vh; }
+
+  .logoCF {
+    width: 7vh;
+    height: 7vh; }
+
+  .ad {
+    display: none; }
+
+  h1 {
+    font-size: 8vh; }
+
+  h2, h3 {
+    font-size: 4.5vh; }
+
+  nav {
+    font-size: 3.5vh; }
+
+  form {
+    width: 100%; }
+
+  .textbox {
+    font-size: 5vh;
+    width: 70%; }
+
+  .btnCalc {
+    font-size: 5vh;
+    width: 60%; }
+
+  .box {
+    width: 80%;
+    margin: 5% 10%; } }
 
 /*# sourceMappingURL=style.css.map */

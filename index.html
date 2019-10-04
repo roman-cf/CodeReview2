@@ -26,56 +26,57 @@
 	<main>
 		<h1>Car insurance</h1>
 		<div class="shield">
-			<p>Great coverage begins with a custom quote</p>
+			<h2>Great coverage begins with a custom quote</h2>
 			<form>
-				<input type="text" name="" value="" placeholder="Your Name">
-				<input type="number" name="" value="" placeholder="Age of the car">
-				<select name="Contry">
-					<option value="">Austria</option>
-					<option value="">Hungary</option>
-					<option value="">Greece</option>	
+				<input class="textbox" id="namen" type="text" name="" value="" placeholder="Your Name">
+				<input class="textbox" id="carAge" type="number" name="" value="" placeholder="Age of the car">
+				<select class="textbox" id="country" name="Country">
+					<option value="1">Austria</option>
+					<option value="2">Hungary</option>
+					<option value="3">Greece</option>	
 				</select>
-				<input type="number" name="" value="" placeholder="100">
-			</form>
-			<input type="button" name="bt1" value="Calculate">
+				<input class="textbox" id="ps" type="number" name="" value="" placeholder="100">
+			</form>	
+			<button class="btnCalc" onclick="calculateInsurance()">Calculate</button>
 			
-			<div class="output">
+			<div class="output" id="result">
 				printed calculation goes here
-			</div>
-			<p>
+			</div>			
+		</div>
+		<div class="textfield">	
+			<h2>
 				Un-complcating car coverage
-			</p>
+			</h2>
 			<p>
 				understanding your coverage options shouldn't be so hard.
 				We'll guide you through available coverage types,
 				starting with who and what is covered. 
 			</p>
-			
 		</div>
 	</main>
 	<section>
 		<div class="box" id="box1">
-			<p>What comes standard</p>
+			<h3>What comes standard</h3>
 			The coverage you need
 			<ul>
 				<li>Bodily Injury Liability</li>
 				<li>Property damage</li>
 				<li>Mediacl Payments</li>
 			</ul>
-			<b>Benefits</b>
+			<span><b>Benefits</b><br>
 			12-month rate guarantee | 24/7 customer
 			service | Liefetime Repar Guarantee
-			
+			</span>
 		</div>
 		<div class="box" id="box2">
-			<p>add-on protection & coverage</p>
+			<h3>Add-on protection & coverage</h3>
 			fore more peace of mind
 			<ul>
 				<li>Better Car replacement</li>
 				<li>Towing & Labor</li>
 				<li> Rental Car Coverage</li>
 			</ul>
-			<b>Earned Benefits</b>
+			<b>Earned Benefits</b><br>
 			Accident Forgiveness | New Car Replacement
 		</div>
 	</section>
@@ -93,5 +94,6 @@
 		<div class="copy">Copyright &copy;  - Roman - CoderFactory 2019</div>
 		
 	</footer>
+	<script src="./js/main.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
 </html>
