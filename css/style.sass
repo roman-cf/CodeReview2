@@ -1,6 +1,10 @@
 $logofont: Verdana, sans-serif
 $sitefont: 'PT Sans Narrow', verdana, sans-serif
 
+$font_color: black
+$font_color_invert: white
+$singnal_color: #449236
+
 
 body
 	margin: 0 auto
@@ -12,7 +16,7 @@ body
 	justify-content: center
 
 a:link, a:hover, a:visited 
-	color: white
+	color: $font_color_invert
 	text-decoration: none
 a:hover
 	text-decoration: underline
@@ -61,7 +65,10 @@ main
 	background-repeat: no-repeat
 	background-position: top 
 	background-size: 1080px 600px
-
+span
+	color: darkgrey
+span b
+	color: $font_color
 h1, h2
 	margin: 0
 	padding-top: 4%	
@@ -71,7 +78,7 @@ h3
 	margin: 0
 	color: #51638E
 main > h1
-	color: white
+	color: $font_color_invert
 	padding-left: 1em
 .shield h1
 	width: 40%
@@ -110,15 +117,15 @@ form
 	margin-top: 1em
 	padding: 0.3em 3em
 	font-size: 1.5em
-	background-color: #449236
-	color: white
+	background-color: $singnal_color
+	color: $font_color_invert
 	border-radius: 0.4em
 	border-style: none
 .output
 	visibility: hidden
 	padding-top: 2em
 	font-size: 2em
-	color: #449236
+	color: $singnal_color
 .textfield
 	text-align: center
 	padding: 0 20%
@@ -148,19 +155,37 @@ section li
 
 footer
 	background-color: black
-	color: white
-	display: flex
-	flex-direction: column
+	color: $font_color_invert
 	align-items: start
 
-footer .logo
+	display: flex
+	flex-direction: column
+footer .logo	
 	margin: 2em
 	order: 1
 	align-self: flex-end
 footer .copy 
 	order: 2
 	align-self: center
-
+.teampicture
+	width: 80%
+.memberpic
+	background-image: url('../img/altavatar.png')
+	background-size: cover
+	width: 100%
+	height: auto
+.picCon
+	width: 100%
+	padding-top: 100%
+	position: relative
+.memberpic
+	position: absolute
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	border-radius: 50%
+	
 @media screen and (resolution: 292dpi),(orientation:portrait),(max-width: 1080px)
 	.logo
 		margin: 4% auto 4% 4%
@@ -173,6 +198,9 @@ footer .copy
 		font-size: 4.5vh
 	nav
 		font-size: 3.5vh
+	main
+		background-position: top
+		background-size: auto 70%
 	.shield
 		width: 80%
 		height: auto !important
@@ -205,5 +233,6 @@ footer .copy
 		margin: 5% 10%
 	#footernav
 		font-size: 3.5vh
+
 	.copy
 		font-size: 2vh

@@ -67,6 +67,12 @@ main {
   background-position: top;
   background-size: 1080px 600px; }
 
+span {
+  color: darkgrey; }
+
+span b {
+  color: black; }
+
 h1, h2 {
   margin: 0;
   padding-top: 4%;
@@ -166,9 +172,9 @@ section li {
 footer {
   background-color: black;
   color: white;
+  align-items: start;
   display: flex;
-  flex-direction: column;
-  align-items: start; }
+  flex-direction: column; }
 
 footer .logo {
   margin: 2em;
@@ -178,6 +184,28 @@ footer .logo {
 footer .copy {
   order: 2;
   align-self: center; }
+
+.teampicture {
+  width: 80%; }
+
+.memberpic {
+  background-image: url("../img/altavatar.png");
+  background-size: cover;
+  width: 100%;
+  height: auto; }
+
+.picCon {
+  width: 100%;
+  padding-top: 100%;
+  position: relative; }
+
+.memberpic {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%; }
 
 @media screen and (resolution: 292dpi), (orientation: portrait), (max-width: 1080px) {
   .logo {
@@ -195,6 +223,10 @@ footer .copy {
 
   nav {
     font-size: 3.5vh; }
+
+  main {
+    background-position: top;
+    background-size: auto 70%; }
 
   .shield {
     width: 80%;
