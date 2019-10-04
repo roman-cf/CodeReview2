@@ -6,7 +6,10 @@ body
 	margin: 0 auto
 	padding: 0
 	font-family: $sitefont
-	width: 1000px
+	width: 1080px
+	display: flex
+	flex-direction: column
+	justify-content: center
 
 a:link, a:hover, a:visited 
 	color: white
@@ -57,7 +60,7 @@ main
 	background-image: url('../img/traffic-332857_1920.jpg')
 	background-repeat: no-repeat
 	background-position: top 
-	background-size: 1000px 500px
+	background-size: 1080px 600px
 
 h1, h2
 	margin: 0
@@ -77,7 +80,7 @@ main > h1
 .shield
 	margin: 2% auto 0
 	width: 55%
-	height: 450px
+	height: 550px
 	background-color: rgba(255,255,255,.85)
 	border: darkgrey solid 2px
 	border-radius: 2px
@@ -90,23 +93,31 @@ form
 	flex-wrap: wrap
 	justify-content: space-between
 	width: 90%
+
+.inputContainer
+	display: flex
+	flex-direction: column
+	text-align: left
+	margin: 3% 
+	width: 40%
+	font-size: 0.8em
+	font-weight: 700
 .textbox
-	margin: 3% 10%
-	width: 120px
+	margin: 0
+	width: 100%
 	padding: 4px
 .btnCalc
 	margin-top: 1em
 	padding: 0.3em 3em
 	font-size: 1.5em
-
 	background-color: #449236
 	color: white
 	border-radius: 0.4em
 	border-style: none
-#result
+.output
 	visibility: hidden
 	padding-top: 2em
-	font-size: 32px
+	font-size: 2em
 	color: #449236
 .textfield
 	text-align: center
@@ -150,9 +161,10 @@ footer .copy
 	order: 2
 	align-self: center
 
-@media screen and (resolution: 292dpi),(orientation:portrait)
+@media screen and (resolution: 292dpi),(orientation:portrait),(max-width: 1080px)
 	.logo
-	
+		margin: 4% auto 4% 4%
+		font-size: 2vh
 	.ad
 		display: none
 	h1
@@ -161,20 +173,37 @@ footer .copy
 		font-size: 4.5vh
 	nav
 		font-size: 3.5vh
+	.shield
+		width: 80%
+		height: auto !important
 	form
 		width: 100%
+		justify-content: center
+	.inputContainer
+		width: 80%
+		font-size: 4vh
 	.textbox
-		font-size: 5vh
-		width: 70%
+		font-size: 4vh
+		height: 7vh
 	.btnCalc
 		font-size: 5vh
 		width: 60%
+		padding: 0.3em 
+	.output
+		font-size: 4.5vh
+	section ul
+		padding-left: 0
+		list-style: none
+		list-style-image: none 
 
 	section li:before
 		content: "\2713\0020"
 		padding-left: 0
-		background-image: none
 
 	.box
 		width: 80%
 		margin: 5% 10%
+	#footernav
+		font-size: 3.5vh
+	.copy
+		font-size: 2vh

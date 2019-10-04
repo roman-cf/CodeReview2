@@ -28,14 +28,14 @@
 		<div class="shield">
 			<h2>Great coverage begins with a custom quote</h2>
 			<form>
-				<input class="textbox" id="namen" type="text" name="" value="" placeholder="Your Name">
-				<input class="textbox" id="carAge" type="number" name="" value="" placeholder="Age of the car">
-				<select class="textbox" id="country" name="Country">
+				<div class="inputContainer">Name<input class="textbox" id="namen" type="text" name="" value="" placeholder="Your Name"></div>
+				<div class="inputContainer">Age of the Car<input class="textbox" id="carAge" type="number" name="" value="" placeholder="8"></div>
+				<div class="inputContainer">Chose your Country<select class="textbox" id="country" name="Country">
 					<option value="1">Austria</option>
 					<option value="2">Hungary</option>
 					<option value="3">Greece</option>	
-				</select>
-				<input class="textbox" id="ps" type="number" name="" value="" placeholder="100">
+				</select></div>
+				<div class="inputContainer">horsepower<input class="textbox" id="ps" type="number" name="" value="" placeholder="100"></div>
 			</form>	
 			<button class="btnCalc" onclick="calculateInsurance()">Calculate</button>
 			
