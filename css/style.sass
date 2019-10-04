@@ -1,10 +1,12 @@
 $logofont: Verdana, sans-serif
 $sitefont: 'PT Sans Narrow', verdana, sans-serif
 
+
 body
-	margin: 0
+	margin: 0 auto
 	padding: 0
 	font-family: $sitefont
+	width: 1000px
 
 a:link, a:hover, a:visited 
 	color: white
@@ -15,23 +17,27 @@ header
 	background-color: #FDF3F3
 	display: flex
 	justify-content: space-between
+	align-items: center
 .logo
 	display: flex
-	margin: 2%
+	margin-left: 5em
 	font-family: $logofont
 	font-weight: 800
-	font-size: 22px
-
+.logotext
+	padding-top: 0.4em
+	padding-right: 0.1em
+	font-size: 1.6em
 
 .logoCF
 	display: flex
 	align-items: center
 	justify-content: center
-	width: 45px
-	height: 45px
+	width: 1.7em
+	height: 1.7em
 	background-color: #bf2524
 	color: white
 	border-radius: 50%
+	font-size: 2em
 .ad
 	margin: 2% 
 nav 
@@ -67,10 +73,10 @@ main > h1
 .shield h1
 	width: 40%
 .shield h2
-	width: 40%
+	width: 60%
 .shield
 	margin: 2% auto 0
-	width: 50vw
+	width: 55%
 	height: 450px
 	background-color: rgba(255,255,255,.85)
 	border: darkgrey solid 2px
@@ -78,7 +84,7 @@ main > h1
 	display: flex
 	flex-direction: column
 	align-items: center
-	text-align:center
+	text-align: center
 form
 	display: flex
 	flex-wrap: wrap
@@ -89,39 +95,35 @@ form
 	width: 120px
 	padding: 4px
 .btnCalc
-	width: 22%
-	height: 1.5em
-	font-size: 22px
+	margin-top: 1em
+	padding: 0.3em 3em
+	font-size: 1.5em
+
 	background-color: #449236
 	color: white
-	border-radius: 4px
+	border-radius: 0.4em
 	border-style: none
 #result
 	visibility: hidden
-	padding-top: 10vh
+	padding-top: 2em
 	font-size: 32px
 	color: #449236
 .textfield
 	text-align: center
-	padding: 0 25vw
-.textfield padding-top
-	margin-bottom: 1.5em
+	padding: 0 20%
+	padding-bottom: 1em
+.tfSubtext
+	font-size: 1.4em
 section
 	display: flex
 	flex-wrap: wrap
 	justify-content: space-between
 section ul
-	padding: 0
-	list-style: none
+	list-style-image: url('../img/check.jpg')
+	padding-left: 1.8em
 
 section li
-	margin-top: 0.7em
-	list-style-type: none
-	padding-left: 25px
-	margin-left: 0px
-	background-image: url('../img/check.jpg')
-	background-repeat: no-repeat
-	background-position: left center
+	padding-bottom: 0.8em
 .box
 	margin: 6% 4%
 	padding: 2%
@@ -140,12 +142,17 @@ footer
 	flex-direction: column
 	align-items: start
 
+footer .logo
+	margin: 2em
+	order: 1
+	align-self: flex-end
+footer .copy 
+	order: 2
+	align-self: center
+
 @media screen and (resolution: 292dpi),(orientation:portrait)
 	.logo
-		font-size: 5vh
-	.logoCF
-		width: 7vh
-		height: 7vh
+	
 	.ad
 		display: none
 	h1
@@ -162,6 +169,11 @@ footer
 	.btnCalc
 		font-size: 5vh
 		width: 60%
+
+	section li:before
+		content: "\2713\0020"
+		padding-left: 0
+		background-image: none
 
 	.box
 		width: 80%
